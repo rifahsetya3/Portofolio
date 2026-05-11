@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Portfolio</title>
+    <title>Portofolio Rif'ah</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -64,6 +64,16 @@
             top: 0; left: 0; right: 0; bottom: 0;
             z-index: -1;
             pointer-events: none;
+        }
+        @media (pointer: fine) {
+            body { cursor: none; }
+            .cursor-ring, .cursor-dot { display: block; }
+        }
+        
+        /* Sembunyikan custom cursor di layar sentuh */
+        @media (pointer: coarse) {
+            body { cursor: auto; }
+            .cursor-ring, .cursor-dot { display: none; }
         }
     </style>
 </head>
